@@ -12,17 +12,23 @@
 				<Option object_output="output" />
 				<Option type="0" />
 				<Option compiler="gcc" />
+				<Compiler>
+					<Add directory="include" />
+				</Compiler>
 			</Target>
 		</Build>
 		<Linker>
 			<Add library="alleg" />
 		</Linker>
-		<Unit filename="block.cpp" />
-		<Unit filename="block.h" />
-		<Unit filename="calculator.cpp" />
-		<Unit filename="calculator.h" />
-		<Unit filename="datavalues.h" />
-		<Unit filename="main.cpp" />
+		<Unit filename="include/block.h" />
+		<Unit filename="include/calculator.h" />
+		<Unit filename="include/datavalues.h" />
+		<Unit filename="res/adsmath_private.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/block.cpp" />
+		<Unit filename="src/calculator.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
